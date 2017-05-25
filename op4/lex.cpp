@@ -1,3 +1,5 @@
+#include "stdafx.h"
+
 #include "lex.h"
 #include <iostream>
 using std::distance;

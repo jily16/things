@@ -1,3 +1,5 @@
+#include "stdafx.h"
+
 #include "parse.h"
 
 using std::dynamic_pointer_cast;
@@ -92,7 +94,7 @@ shared_ptr<ASTNode> Parser::F()
 		}
 		result = Eresult;
 	}
-	else if(dynamic_pointer_cast<num_t>(token))
+	else if (dynamic_pointer_cast<num_t>(token))
 	{
 		result->token_name = token;
 	}
